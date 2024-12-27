@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">appDangNhap</string>
+    <string name="chao">Hello World</string>
+    <string name="Chao">Hello World\n</string>
+</resources>

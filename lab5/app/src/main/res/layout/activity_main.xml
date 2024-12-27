@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <!-- EditText: Nhập Mã số -->
+    <EditText
+        android:id="@+id/etMaSo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Mã số nhân viên"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- EditText: Nhập Họ tên -->
+    <EditText
+        android:id="@+id/etHoTen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Họ tên nhân viên"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMaSo" />
+
+    <!-- EditText: Nhập Số điện thoại -->
+    <EditText
+        android:id="@+id/etSoDienThoai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại nhân viên"
+        android:inputType="phone"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etHoTen" />
+
+    <!-- Nút Thêm mới -->
+    <Button
+        android:id="@+id/btnThemMoi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Thêm mới"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSoDienThoai" />
+
+    <!-- ListView: Danh sách nhân viên -->
+    <ListView
+        android:id="@+id/lvNhanVien"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnThemMoi"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
