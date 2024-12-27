@@ -28,7 +28,7 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
         TextView txtMa,txtTen,txtDT;
         txtMa=customView.findViewById(R.id.txtMa);
         txtTen=customView.findViewById(R.id.txtTen);
-        txtDT=customView.findViewById(R.id.txtDT);
+        txtDT=customView.findViewById(R.id.txtDienthoai);
         Contact ct=getItem(position);
         txtMa.setText(ct.getMa()+"");
         txtTen.setText(ct.getTen());
